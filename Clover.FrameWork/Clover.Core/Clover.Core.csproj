@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05558BED-0A9F-4FED-B00B-DEA030AA708D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clover.Core</RootNamespace>
+    <AssemblyName>Clover.Core</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Clover.Core/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\发布\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '发布程序集|AnyCPU' ">
+    <OutputPath>..\..\发布\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Enyim.Caching">
+      <HintPath>..\..\libs\Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>..\..\libs\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\libs\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\libs\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=2.6.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\libs\System.Xml.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alias\Alias.cs" />
+    <Compile Include="Base\ConsoleBase.cs" />
+    <Compile Include="Base\GenericContext.cs" />
+    <Compile Include="Base\GenericBase.cs" />
+    <Compile Include="Base\GenericDelegate.cs" />
+    <Compile Include="Base\IApplicationEnvironment.cs" />
+    <Compile Include="Base\ILibraryConfiguration.cs" />
+    <Compile Include="Base\SingleRunMethod.cs" />
+    <Compile Include="Base\LibraryConfigurationBase.cs" />
+    <Compile Include="Base\TaskBase.cs" />
+    <Compile Include="Base\TaskCommand.cs" />
+    <Compile Include="Caching\Base\CacheItem.cs" />
+    <Compile Include="Caching\Base\Enum.cs" />
+    <Compile Include="Caching\Impl\AsyncCleanupCacheBacker.cs" />
+    <Compile Include="Caching\Base\CacheItemGroup.cs" />
+    <Compile Include="Caching\CacheItemHolder.cs" />
+    <Compile Include="Caching\Base\CacheSetting.cs" />
+    <Compile Include="Caching\CacheManager.cs" />
+    <Compile Include="Caching\ICacheBacker.cs" />
+    <Compile Include="Caching\Impl\MemcacheBacker.cs" />
+    <Compile Include="Caching\Impl\SimpleCacheBacker.cs" />
+    <Compile Include="Caching\Base\SmartCacheKey.cs" />
+    <Compile Include="Caching\Impl\EntLibCacheBacker.cs" />
+    <Compile Include="CodeTimer\AnalysisData.cs" />
+    <Compile Include="CodeTimer\CodeTimer.cs" />
+    <Compile Include="CodeTimer\HighResolutionTimer.cs" />
+    <Compile Include="Collection\IGeneric.cs" />
+    <Compile Include="Collection\Pair.cs" />
+    <Compile Include="Collection\PairString.cs" />
+    <Compile Include="Collection\Set.cs" />
+    <Compile Include="Collection\SortList.cs" />
+    <Compile Include="Collection\TreeS.cs" />
+    <Compile Include="Common\BadWordsFilter.cs" />
+    <Compile Include="Common\ConvertHelper.cs" />
+    <Compile Include="Common\XMLSeaializeHelper.cs" />
+    <Compile Include="Configuration\DefaultConfigFileManager.cs" />
+    <Compile Include="Configuration\Interface\IConfigFileManager.cs" />
+    <Compile Include="Configuration\Interface\IConfigInfo.cs" />
+    <Compile Include="Domain\AnonymousAccount.cs" />
+    <Compile Include="Domain\IAccount.cs" />
+    <Compile Include="Domain\IAppContext.cs" />
+    <Compile Include="Domain\IEntity.cs" />
+    <Compile Include="Domain\IGroupPosition.cs" />
+    <Compile Include="Domain\Impl\AppContext.cs" />
+    <Compile Include="Domain\Impl\GroupPosition.cs" />
+    <Compile Include="Domain\IRole.cs" />
+    <Compile Include="Extension\DataTableHelper.cs" />
+    <Compile Include="IFilter\ComHelper.cs" />
+    <Compile Include="IFilter\FilterLoader.cs" />
+    <Compile Include="IFilter\FilterReader.cs" />
+    <Compile Include="IFilter\IFilter.cs" />
+    <Compile Include="IO\Exntesion.cs" />
+    <Compile Include="IO\FileCode.cs" />
+    <Compile Include="IO\FileWatcher.cs" />
+    <Compile Include="IO\LimitStream.cs" />
+    <Compile Include="IO\LinuxPath.cs" />
+    <Compile Include="IO\PathTool.cs" />
+    <Compile Include="IO\WindownsPath.cs" />
+    <Compile Include="IO\Zipper.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\Impl\NLogImpl.cs" />
+    <Compile Include="Network\Mailer.cs" />
+    <Compile Include="Properties\RegexResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegexResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reflection\DumpBuilder.cs" />
+    <Compile Include="Common\IDumpable.cs" />
+    <Compile Include="Reflection\FastActivator.cs" />
+    <Compile Include="Reflection\ReflectorHelper.cs" />
+    <Compile Include="Common\StringHelper.cs" />
+    <Compile Include="Common\XmlHelper2.cs" />
+    <Compile Include="Logging\LogCentral.cs" />
+    <Compile Include="Logging\Event\LoggingInformation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Crypt\Blowfish.cs" />
+    <Compile Include="Crypt\BlowfishAlgorithm.cs" />
+    <Compile Include="Crypt\BlowfishCBC.cs" />
+    <Compile Include="Crypt\BlowfishTables.cs" />
+    <Compile Include="Crypt\Twofish.cs" />
+    <Compile Include="Crypt\TwofishBase.cs" />
+    <Compile Include="Crypt\TwofishEncryption.cs" />
+    <Compile Include="Crypt\xcrypt.cs" />
+    <Compile Include="Validate\Enums.cs" />
+    <Compile Include="Validate\Languages\LangCache.cs" />
+    <Compile Include="Validate\ValidationErrorCode.cs" />
+    <Compile Include="Validate\Validator.cs" />
+    <Compile Include="Validate\ValidatorResult.cs" />
+    <Compile Include="Validate\Validators\BoolValidator.cs" />
+    <Compile Include="Validate\Validators\DateValidator.cs" />
+    <Compile Include="Validate\Validators\NumericValidator.cs" />
+    <Compile Include="Validate\Validators\StringValidator.cs" />
+    <Compile Include="Validate\Validators\ValidatorBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Caching\ACacheNameSpace.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\RegexResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>RegexResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Validate\Languages\Languages-en.xml" />
+    <EmbeddedResource Include="Validate\Languages\Languages-zh_cn.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clover.i18n\Clover.i18n.csproj">
+      <Project>{D4C0BAAF-1571-457B-B5AD-063286BEEAC5}</Project>
+      <Name>Clover.i18n</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exception\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

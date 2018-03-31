@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <data name="int_IsLessThanOrEqual">{0} 必须小于或等于 {1}</data>
+  <data name="int_IsLessThan">{0} 必须小于{1}</data>
+  <data name="int_IsGreaterThanOrEqual">{0} 必须大于或等于{1}</data>
+  <data name="int_IsGreaterThan">{0} 必须大于 {1}</data>
+  <data name="int_Equals">{0} 必须{1}</data>
+  <data name="int_Between">{0} 必须在 {1} 至 {2}</data>
+  <data name="int_IsZero">{0} 必须为0</data>
+  <data name="string_IsEmpty">{0} 必须空</data>
+  <data name="string_IsLongerThan">{0} 太短 (最小 {1} 个字符)</data>
+  <data name="string_IsShorterThan">{0} 太长 (最长 {1} 个字符)</data>
+  <data name="string_IsEmail">'{0}' 无效的邮件地址</data>
+  <data name="string_IsURL">'{0}' 无效的URL地址</data>
+  <data name="string_IsDate">'{0}' 无效的日期</data>
+  <data name="string_IsInteger">'{0}' 不是有效的整形</data>
+  <data name="string_IsDecimal">'{0}' 不是有效的金额类型</data>
+  <data name="string_HasALengthBetween">'{0}' 的长度必须在 {1} 至 {2} 个字符</data>
+  <data name="string_StartsWith">'{0}' 必须以 '{1}' 开始</data>
+  <data name="string_EndsWith">'{0}' 必须以 '{1}'结束</data>
+  <data name="string_Contains">'{0}' 必须 包含 '{1}'</data>
+  <data name="string_IsLength">'{0}' 必须 包含 '{1}' 个字符</data>
+  <data name="date_IsNotAFutureDate">'{0}' 必须大于今天</data>
+  <data name="date_IsNotAPastDate">'{0}' 必须小于今天</data>
+  <data name="date_IsNotMinMaxValue">'{0}' 必须是 最小值或最大值</data>
+  <data name="date_IsLaterThan">'{0}' 必须迟于 {1}</data>
+  <data name="date_IsEarlierThan">'{0}' 必须早于 {1}</data>
+  <data name="bool_IsTrue">'{0}' 必须'真'</data>
+  <data name="bool_IsFalse">'{0}' 必须'假'</data>
+</items>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11B73D1C-0C62-43F8-BBE2-7673102B4F32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clover.Component.Excel</RootNamespace>
+    <AssemblyName>Clover.Component.Excel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\发布\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPOI, Version=1.2.5.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Area\Area.cs" />
+    <Compile Include="Common\Area\RepeatArea.cs" />
+    <Compile Include="Common\Area\StaticArea.cs" />
+    <Compile Include="Common\DataField\DataCell.cs" />
+    <Compile Include="Common\DataField\DataColumn.cs" />
+    <Compile Include="Common\DataField\DataFieldBase.cs" />
+    <Compile Include="Common\OperationState.cs" />
+    <Compile Include="Common\Utility.cs" />
+    <Compile Include="Common\WorksheetBase.cs" />
+    <Compile Include="Enum\Enums.cs" />
+    <Compile Include="ExcelResult\ExcelMessage.cs" />
+    <Compile Include="ExcelResult\ExcelMessageCollection.cs" />
+    <Compile Include="ExcelResult\ExcelMessageFactory.cs" />
+    <Compile Include="ExcelResult\ExcelResult.cs" />
+    <Compile Include="ExcelUtilities.cs" />
+    <Compile Include="ExcelUtilities.Fast.cs" />
+    <Compile Include="Export\Area\Area.cs" />
+    <Compile Include="Export\Area\RepeatArea.cs" />
+    <Compile Include="Export\Area\StaticArea.cs" />
+    <Compile Include="Export\CellFunction\CellStyle.cs" />
+    <Compile Include="Export\CellFunction\CellStyleBase.cs" />
+    <Compile Include="Export\CellFunction\DataFormat.cs" />
+    <Compile Include="Export\CellFunction\Font.cs" />
+    <Compile Include="Export\CellFunction\Formula.cs" />
+    <Compile Include="Export\DataField\DataCell.cs" />
+    <Compile Include="Export\DataField\DataColumn.cs" />
+    <Compile Include="Export\DataField\DataFieldBase.cs" />
+    <Compile Include="Export\Enums.cs" />
+    <Compile Include="Export\EventArgument\ExportEventArgs.cs" />
+    <Compile Include="Export\ExcelExportConfiguration.cs" />
+    <Compile Include="Export\ExcelExportProvider.cs" />
+    <Compile Include="Export\ExcelExportProviderCollection.cs" />
+    <Compile Include="Export\Group\ColumnGroup.cs" />
+    <Compile Include="Export\Group\GroupBase.cs" />
+    <Compile Include="Export\Group\GroupConfig.cs" />
+    <Compile Include="Export\Group\GroupParse.cs" />
+    <Compile Include="Export\Group\RowGroup.cs" />
+    <Compile Include="Export\Group\SheetGroup.cs" />
+    <Compile Include="Export\Merged\Merged.cs" />
+    <Compile Include="Export\Merged\MergedConfig.cs" />
+    <Compile Include="Export\Merged\MergedParse.cs" />
+    <Compile Include="Export\Worksheet.cs" />
+    <Compile Include="Import\DataField\DataColumn.cs" />
+    <Compile Include="Import\Enums.cs" />
+    <Compile Include="Import\EventArgument\ImportEventArgs.cs" />
+    <Compile Include="Import\ExcelImportConfiguration.cs" />
+    <Compile Include="Import\ExcelImportProvider.cs" />
+    <Compile Include="Import\ExcelImportProviderCollection.cs" />
+    <Compile Include="Import\Worksheet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\NpoiUtil.cs" />
+    <Compile Include="ExcelUtilities.Special.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Import\Area\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

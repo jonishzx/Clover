@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="一个缓冲清除机制,通过定时器清楚过期的缓冲对象">
+    <Position X="7.698" Y="4.396" Height="0.51" Width="1.7" />
+  </Comment>
+  <Class Name="Clover.Core.Caching.AsyncCleanupCacheBacker" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAQQACAAAAAAAAAAAAAAAABAAAAAACAAAAACAAA=</HashCode>
+      <FileName>Caching\Impl\AsyncCleanupCacheBacker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Clover.Core.Caching.SmartCacheKey" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEgAAEAAAAAAAAgIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Caching\Base\SmartCacheKey.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Clover.Core.Caching.CacheItemGroup">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Caching\Base\CacheItemGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clover.Core.Caching.CacheItemHolder&lt;T&gt;">
+    <Position X="5.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAAAAAAAAAAAAAAEBAIAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Caching\CacheItemHolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clover.Core.Caching.CacheItem">
+    <Position X="7" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAUEAAACAAAAAABAAIAAQACAAAAAAAAAAAgQAAAA=</HashCode>
+      <FileName>Caching\Base\CacheItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clover.Core.Caching.CacheManager">
+    <Position X="3.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAACAAAAABQBACAAgBAQAAAAAAAgAICAAAAAAAAA=</HashCode>
+      <FileName>Caching\CacheManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clover.Core.Caching.SimpleCacheBacker">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Clover.Core.Caching.SimpleCacheBacker.SimpleCacheItemInformation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Caching\Impl\SimpleCacheBacker.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AABAAAQAAAAABQBAAAAABAQAAEABAAAAICAAAAAQIAA=</HashCode>
+      <FileName>Caching\Impl\SimpleCacheBacker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Clover.Core.Caching.ICacheBacker" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAABQBAAAAABAQAAAAAAAAAIAAAAAAQAAA=</HashCode>
+      <FileName>Caching\ICacheBacker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>
