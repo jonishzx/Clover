@@ -6,17 +6,11 @@ using System.Data.SqlClient;
 
 namespace Clover.Data
 {
-
-
-
-
     public sealed class DbHelperSQL : IDbHelper
     {
+        public int aa = 0;
         private static readonly object lockobj = new object();
         private static DbHelperSQL obj;
-
-
-
 
         public int CommandTimeout = 600;
 
